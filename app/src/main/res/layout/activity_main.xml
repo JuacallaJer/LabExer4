@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.juacalla.labexer4.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:paddingTop="65dp"
+        android:text="Paragraph"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_paragraph"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:hint="Enter Text"
+        android:paddingTop="75dp" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:background="@android:color/black"
+        android:elevation="0dp"
+        android:onClick="saveInfo"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/et_paragraph"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:onClick="clearInfo"
+        android:text="Clear"
+        android:textColor="@android:color/white"
+        android:layout_alignBaseline="@+id/btn_save"
+        android:layout_alignBottom="@+id/btn_save"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_display"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:onClick="displayInfo"
+        android:text="Display"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_alignBaseline="@+id/btn_clear"
+        android:layout_alignBottom="@+id/btn_clear"
+        android:layout_toRightOf="@+id/btn_clear"
+        android:layout_toEndOf="@+id/btn_clear" />
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_display"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>
